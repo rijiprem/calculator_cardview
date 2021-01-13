@@ -1,0 +1,53 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/calc"
+            android:layout_width="500px"
+            android:layout_height="500px"/>
+        <EditText
+            android:id="@+id/num1"
+            android:hint="Enter the first Number"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/num2"
+            android:hint="Enter the Second Number"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="addition"
+            android:background="@drawable/buttonstyle"
+            android:layout_margin="40dp"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:onClick="back"
+            android:background="@drawable/buttonstyle"
+            android:layout_margin="40dp"
+            android:text="BACK TO HOME"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
